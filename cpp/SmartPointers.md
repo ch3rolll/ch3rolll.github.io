@@ -84,6 +84,14 @@ v.push_back(new Base);      // OK
 v.push_back(new Derived);   // OK too
 ```
 
+## shared_ptr
+
+Several shared_ptr objects may own the same object. The object is destroyed and its memory deallocated when either of the following happens:
+
+[] the last remaining shared_ptr owning the object is destroyed;
+[] the last remaining shared_ptr owning the object is assigned another pointer via operator= or reset().
+
+
 
 
 
