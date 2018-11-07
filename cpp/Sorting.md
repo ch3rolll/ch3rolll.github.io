@@ -16,14 +16,6 @@ Worst case | O(n^2)
 void insertion_sort(int arr[], const int length);
 void print_array(const int array[],int size);
 
-int main(){
-
-    int array[] = {4,6,3,7,5,9,2,8,1,10};
-    insertion_sort(array,10);
-    print_array(array,10);
-    return 0;
-}
-
 void insertion_sort(int arr[], const int length){
 
     for (int i = 1; i < length; i++){
@@ -42,6 +34,14 @@ void print_array(const int array[], int size){
     {
         std::cout << array[j] << std::endl;
     }
+}
+
+int main(){
+
+    int array[] = {4,6,3,7,5,9,2,8,1,10};
+    insertion_sort(array,10);
+    print_array(array,10);
+    return 0;
 }
 ```
 # Merge Sort
