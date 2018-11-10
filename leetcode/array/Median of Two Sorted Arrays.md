@@ -11,6 +11,10 @@ This question is equivalent to `find k-th max number`
 1. Naive: Do inseration
 2. Binary search: find k/2-th in A and B respetively, remove the part has been verified
 
+So every time, remove min(k/2, m) elements from eiterh A or B.
+
+Assume m is the size of shorter array.
+
 Termination:
 - if m = 0, return B[k-1]
 - if n = 0, return A[k-1]
