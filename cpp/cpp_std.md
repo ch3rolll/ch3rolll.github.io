@@ -29,3 +29,12 @@ static members exist as members of the class rather than as an instance in each 
 - Non-static member functions can access all data members of the class: static and non-static. 
 - Static member functions can only operate on the static data members.
 - C functions declared static within a module may only be called by other functions within that module (file scope).
+
+
+4. std::transform
+
+Applies an operation sequentially to the elements of one (1) or two (2) ranges and stores the result in the range that begins at result.
+
+This operation could be :
+- unary operation: Applies op to each of the elements in the range [first1,last1) and stores the value returned by each operation in the range that begins at result.
+- binary operation: Calls binary_op using each of the elements in the range [first1,last1) as first argument, and the respective argument in the range that begins at first2 as second argument. The value returned by each call is stored in the range that begins at result.
