@@ -165,6 +165,7 @@
           mapTypeControl: false
         });
 
+        directionsDisplay = new google.maps.DirectionsRenderer;
         // This autocomplete is for use in the search within time entry box.
         var startAutocomplete = new google.maps.places.Autocomplete(
             document.getElementById('start-text'));
@@ -612,7 +613,7 @@
           travelMode: google.maps.TravelMode[mode]
         }, function(response, status) {
           if (status === google.maps.DirectionsStatus.OK) {
-            var directionsDisplay = new google.maps.DirectionsRenderer({
+            directionsDisplay = new google.maps.DirectionsRenderer({
               map: map,
               directions: response,
               draggable: true,
@@ -628,6 +629,7 @@
 
       function DisplayDirectionsWPts(){
         hideMarkers(markers);
+        directionsDisplay.setMap(null);
 
         var directionsService = new google.maps.DirectionsService;
         // Get the destination address from the user entered value.
@@ -664,6 +666,7 @@
           travelMode: google.maps.TravelMode[mode]
         }, function(response, status) {
 
+          console.log(response);
           var total_dist = 0;
           var total_time = 0;
           var myroute = response.routes[0];
@@ -677,7 +680,7 @@
           // document.getElementById('total').innerHTML = total + ' km';
 
           if (status === google.maps.DirectionsStatus.OK) {
-            var directionsDisplay = new google.maps.DirectionsRenderer({
+            directionsDisplay = new google.maps.DirectionsRenderer({
               map: map,
               directions: response,
               draggable: true,
