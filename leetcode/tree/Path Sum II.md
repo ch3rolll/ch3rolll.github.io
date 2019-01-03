@@ -18,7 +18,8 @@ void PathSum(TreeNode* root, int sum, std::vector<int>& cur, std::vector<std::ve
 		}
 	}
 
-	PathSum(root->left, sum-root->val, cur, result);
+	PathSum(root->left, sum-root->val, cur, res
+		ult);
 	PathSum(root->right, sum-root->val, cur, result);
 	cur.pop_back();
 }

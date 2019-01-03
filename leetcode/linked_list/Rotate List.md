@@ -35,5 +35,6 @@ void RotateList(Node* &root, int k){
 
 	root -> next = nullptr;
 
+	root = dummy->next;
 }
 ```

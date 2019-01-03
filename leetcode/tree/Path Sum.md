@@ -28,4 +28,4 @@ bool PathSum(TreeNode* root, int sum){
 	}
 	return PathSum(root -> left, sum-root->val) || PathSum(root -> right, sum-root->val);
 }
-```
+
