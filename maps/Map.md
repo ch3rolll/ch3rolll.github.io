@@ -27,3 +27,6 @@ HD Map is short for High Definition, which mean it has more detailed information
 
 3. And there is a lot of new topics for HD Maps as well. How do you fuse the new observations with your old HD map data and eventaully update your map to keep it fresh.
 
+
+Opensource maps:
+http://download.geofabrik.de/asia.html

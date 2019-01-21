@@ -111,6 +111,21 @@
 - Liquidity
 
 
+# Investing
+## Two extremes
+- Buy and hold for a long period of time
+
+### Active trading
+#### Advantages
+- take advan of new oppor.
+- Sell those losers
+- re-allocate faster in volatile markets
+
+#### Disadvan
+- More time devoted to investing
+- increased transaction fees/taxes
+- investing rewards patience with compounding
+- Typically underperforms over long-term
 
 
 
